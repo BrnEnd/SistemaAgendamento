@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaAgendamento.WebApi", "SistemaAgendamento.WebApi.csproj", "{9F34CFAA-9BC4-471F-9AE5-B48EC8D21C97}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaAgendamento.WebApi", "SistemaAgendamento.WebApi.csproj", "{9F34CFAA-9BC4-471F-9AE5-B48EC8D21C97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaAgendamento.Application", "..\SistemaAgendamento.Core\SistemaAgendamento.Application.csproj", "{048BEFA9-101B-4E91-88DF-34C9DAD92C14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaAgendamento.Application", "..\SistemaAgendamento.Core\SistemaAgendamento.Application.csproj", "{048BEFA9-101B-4E91-88DF-34C9DAD92C14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaAgendamento.Infrastructure", "..\SistemaAgendamento.Infrastructure\SistemaAgendamento.Infrastructure.csproj", "{445E56CF-CD8A-4D25-B43B-023252EF45EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaAgendamento.Repository", "..\SistemaAgendamento.Infrastructure\SistemaAgendamento.Repository.csproj", "{445E56CF-CD8A-4D25-B43B-023252EF45EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaAgendamento.Domain", "..\SistemaAgendamento.Domain\SistemaAgendamento.Domain.csproj", "{7548C426-CE18-4E56-94EE-2BCCB1C2B1D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaAgendamento.Domain", "..\SistemaAgendamento.Domain\SistemaAgendamento.Domain.csproj", "{7548C426-CE18-4E56-94EE-2BCCB1C2B1D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaAgendamento.Tests", "..\SistemaAgendamento.Tests\SistemaAgendamento.Tests.csproj", "{19818B4A-2BD1-49BF-94BC-ACEEE0AA021B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaAgendamento.Tests", "..\SistemaAgendamento.Tests\SistemaAgendamento.Tests.csproj", "{19818B4A-2BD1-49BF-94BC-ACEEE0AA021B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
