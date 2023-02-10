@@ -15,7 +15,7 @@ namespace SistemaAgendamento.Domain.Models
             {
                 if (value < 0)
                 {
-                    throw new ArgumentException("Necessario IDCliente para instancia do Objeto Cliente.");
+                    throw new Exception("Necessario IDCliente para instancia do Objeto Cliente.");
                 }
                 else
                 {
