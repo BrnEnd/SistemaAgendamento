@@ -4,6 +4,164 @@
     "D:\\Projetos - GITHUB\\SistemaAgendamento\\src\\SistemaAgendamento\\SistemaAgendamento.WebApi.csproj": {}
   },
   "projects": {
+    "D:\\Projetos - GITHUB\\SistemaAgendamento\\src\\SistemaAgendamento.Domain\\SistemaAgendamento.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projetos - GITHUB\\SistemaAgendamento\\src\\SistemaAgendamento.Domain\\SistemaAgendamento.Domain.csproj",
+        "projectName": "SistemaAgendamento.Domain",
+        "projectPath": "D:\\Projetos - GITHUB\\SistemaAgendamento\\src\\SistemaAgendamento.Domain\\SistemaAgendamento.Domain.csproj",
+        "packagesPath": "C:\\Users\\Bruno Alexandrino\\.nuget\\packages\\",
+        "outputPath": "D:\\Projetos - GITHUB\\SistemaAgendamento\\src\\SistemaAgendamento.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\SDK\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Bruno Alexandrino\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projetos - GITHUB\\SistemaAgendamento\\src\\SistemaAgendamento.Infrastructure\\SistemaAgendamento.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projetos - GITHUB\\SistemaAgendamento\\src\\SistemaAgendamento.Infrastructure\\SistemaAgendamento.Repository.csproj",
+        "projectName": "SistemaAgendamento.Repository",
+        "projectPath": "D:\\Projetos - GITHUB\\SistemaAgendamento\\src\\SistemaAgendamento.Infrastructure\\SistemaAgendamento.Repository.csproj",
+        "packagesPath": "C:\\Users\\Bruno Alexandrino\\.nuget\\packages\\",
+        "outputPath": "D:\\Projetos - GITHUB\\SistemaAgendamento\\src\\SistemaAgendamento.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\SDK\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Bruno Alexandrino\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Projetos - GITHUB\\SistemaAgendamento\\src\\SistemaAgendamento.Domain\\SistemaAgendamento.Domain.csproj": {
+                "projectPath": "D:\\Projetos - GITHUB\\SistemaAgendamento\\src\\SistemaAgendamento.Domain\\SistemaAgendamento.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\Projetos - GITHUB\\SistemaAgendamento\\src\\SistemaAgendamento\\SistemaAgendamento.WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -32,7 +190,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Projetos - GITHUB\\SistemaAgendamento\\src\\SistemaAgendamento.Infrastructure\\SistemaAgendamento.Repository.csproj": {
+                "projectPath": "D:\\Projetos - GITHUB\\SistemaAgendamento\\src\\SistemaAgendamento.Infrastructure\\SistemaAgendamento.Repository.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

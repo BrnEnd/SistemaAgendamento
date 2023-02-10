@@ -5,8 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="ModelConfiguration\" />
-    <Folder Include="Data\" />
     <Folder Include="Services\" />
     <Folder Include="Repository\" />
   </ItemGroup>
@@ -25,6 +23,10 @@
     </PackageReference>
     <PackageReference Include="Microsoft.Extensions.Logging" Version="7.0.0" />
     <PackageReference Include="MySql.EntityFrameworkCore" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SistemaAgendamento.Domain\SistemaAgendamento.Domain.csproj" />
   </ItemGroup>
 
 </Project>
