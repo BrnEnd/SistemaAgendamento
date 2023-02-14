@@ -1,0 +1,15 @@
+﻿using SistemaAgendamento.Domain.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SistemaAgendamento.Application.Interfaces
+{
+    public interface IEstabelecimentoRepository : IRepository<Estabelecimento>
+    {
+        IEnumerable<Estabelecimento> GetEstabelecimentosAtivos();
+    
+    }
+}

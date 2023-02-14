@@ -1,3 +1,4 @@
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -9,6 +10,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using SistemaAgendamento.Repository.Data;
+using SistemaAgendamento.Repository.DTOs.Profiles;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,6 +31,14 @@ namespace SistemaAgendamento
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            var mappingConfig = new MapperConfiguration(mc =>
+            {
+                mc.AddProfile(new MappingProfiles());
+            });
+
+            IMapper mapper = mappingConfig.CreateMapper();
+            services.AddSingleton(mapper);
+
             services.AddDbContext<AppDbContext>(opts => opts.UseMySQL(Configuration.GetConnectionString("Connection")));
 
             services.AddControllers();

@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "LPMW+AjeDNUVFJK9vx0ZwVapZ0QiGlY4y1/nBq1qOZE3lR4UB+BkuV+Iwrp2CU4vUExALz9nxJ8BV1fiZuSByg==",
+  "dgSpecHash": "mcbkm/bRWhVeenVXp5IpQJV9ERWKs3NA2j2Q46+lj4HaBcAOdjIy0yY2V/mXguq6DUK6e2FX059jWJ7ix2U+Mw==",
   "success": true,
   "projectFilePath": "D:\\Projetos - GITHUB\\SistemaAgendamento\\src\\SistemaAgendamento\\SistemaAgendamento.WebApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Bruno Alexandrino\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Bruno Alexandrino\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\Bruno Alexandrino\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\Bruno Alexandrino\\.nuget\\packages\\google.protobuf\\3.11.4\\google.protobuf.3.11.4.nupkg.sha512",
     "C:\\Users\\Bruno Alexandrino\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

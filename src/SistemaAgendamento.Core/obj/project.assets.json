@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "SistemaAgendamento.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/SistemaAgendamento.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SistemaAgendamento.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "SistemaAgendamento.Domain/1.0.0": {
+      "type": "project",
+      "path": "../SistemaAgendamento.Domain/SistemaAgendamento.Domain.csproj",
+      "msbuildProject": "../SistemaAgendamento.Domain/SistemaAgendamento.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "SistemaAgendamento.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Bruno Alexandrino\\.nuget\\packages\\": {},
@@ -39,7 +58,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Projetos - GITHUB\\SistemaAgendamento\\src\\SistemaAgendamento.Domain\\SistemaAgendamento.Domain.csproj": {
+              "projectPath": "D:\\Projetos - GITHUB\\SistemaAgendamento\\src\\SistemaAgendamento.Domain\\SistemaAgendamento.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

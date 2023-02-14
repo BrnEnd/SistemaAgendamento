@@ -20,7 +20,6 @@ namespace SistemaAgendamento.Repository.Migrations
             modelBuilder.Entity("SistemaAgendamento.Domain.Models.Agenda", b =>
                 {
                     b.Property<int>("IdAgenda")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     b.Property<string>("AgendaAberta")
@@ -82,6 +81,7 @@ namespace SistemaAgendamento.Repository.Migrations
             modelBuilder.Entity("SistemaAgendamento.Domain.Models.Estabelecimento", b =>
                 {
                     b.Property<int>("IdEstabelecimento")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     b.Property<string>("Ativo")
@@ -100,6 +100,17 @@ namespace SistemaAgendamento.Repository.Migrations
                     b.ToTable("Estabelecimento");
                 });
 
+            modelBuilder.Entity("SistemaAgendamento.Domain.Models.Agenda", b =>
+                {
+                    b.HasOne("SistemaAgendamento.Domain.Models.Estabelecimento", "Estabelecimento")
+                        .WithOne("Agenda")
+                        .HasForeignKey("SistemaAgendamento.Domain.Models.Agenda", "IdAgenda")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Estabelecimento");
+                });
+
             modelBuilder.Entity("SistemaAgendamento.Domain.Models.Agendamento", b =>
                 {
                     b.HasOne("SistemaAgendamento.Domain.Models.Agenda", "Agenda")
@@ -115,27 +126,19 @@ namespace SistemaAgendamento.Repository.Migrations
                     b.Navigation("Cliente");
                 });
 
-            modelBuilder.Entity("SistemaAgendamento.Domain.Models.Estabelecimento", b =>
-                {
-                    b.HasOne("SistemaAgendamento.Domain.Models.Agenda", "Agenda")
-                        .WithOne("Estabelecimento")
-                        .HasForeignKey("SistemaAgendamento.Domain.Models.Estabelecimento", "IdEstabelecimento")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Agenda");
-                });
-
             modelBuilder.Entity("SistemaAgendamento.Domain.Models.Agenda", b =>
                 {
                     b.Navigation("Agendamentos");
-
-                    b.Navigation("Estabelecimento");
                 });
 
             modelBuilder.Entity("SistemaAgendamento.Domain.Models.Cliente", b =>
                 {
                     b.Navigation("Agendamentos");
+                });
+
+            modelBuilder.Entity("SistemaAgendamento.Domain.Models.Estabelecimento", b =>
+                {
+                    b.Navigation("Agenda");
                 });
 #pragma warning restore 612, 618
         }
