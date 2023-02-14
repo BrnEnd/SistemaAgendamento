@@ -803,6 +803,34 @@
             "rid": "win"
           }
         }
+      },
+      "SistemaAgendamento.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/SistemaAgendamento.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SistemaAgendamento.Domain.dll": {}
+        }
+      },
+      "SistemaAgendamento.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.0",
+          "Microsoft.EntityFrameworkCore.Abstractions": "5.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "5.0.0",
+          "Microsoft.Extensions.Logging": "7.0.0",
+          "MySql.EntityFrameworkCore": "5.0.0",
+          "SistemaAgendamento.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SistemaAgendamento.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SistemaAgendamento.Repository.dll": {}
+        }
       }
     }
   },
@@ -2141,6 +2169,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "SistemaAgendamento.Domain/1.0.0": {
+      "type": "project",
+      "path": "../SistemaAgendamento.Domain/SistemaAgendamento.Domain.csproj",
+      "msbuildProject": "../SistemaAgendamento.Domain/SistemaAgendamento.Domain.csproj"
+    },
+    "SistemaAgendamento.Repository/1.0.0": {
+      "type": "project",
+      "path": "../SistemaAgendamento.Infrastructure/SistemaAgendamento.Repository.csproj",
+      "msbuildProject": "../SistemaAgendamento.Infrastructure/SistemaAgendamento.Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2152,6 +2190,7 @@
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.0",
       "Microsoft.Extensions.Logging >= 7.0.0",
       "MySql.EntityFrameworkCore >= 5.0.0",
+      "SistemaAgendamento.Repository >= 1.0.0",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
@@ -2187,7 +2226,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Projetos - GITHUB\\SistemaAgendamento\\src\\SistemaAgendamento.Infrastructure\\SistemaAgendamento.Repository.csproj": {
+              "projectPath": "D:\\Projetos - GITHUB\\SistemaAgendamento\\src\\SistemaAgendamento.Infrastructure\\SistemaAgendamento.Repository.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
