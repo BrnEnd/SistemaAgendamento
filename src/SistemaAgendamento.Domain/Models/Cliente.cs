@@ -42,6 +42,8 @@ namespace SistemaAgendamento.Domain.Models
             }
         }
 
+        public List<Agendamento> Agendamentos { get; set; }
+
         public Cliente(int idCliente, string nome, char ativo = 's')
         {
             IdCliente = idCliente;

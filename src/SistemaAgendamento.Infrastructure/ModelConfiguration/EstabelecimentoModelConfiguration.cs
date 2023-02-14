@@ -16,14 +16,20 @@ namespace SistemaAgendamento.Repository.ModelConfiguration
                 .ToTable("Estabelecimento");
 
             builder.Entity<Estabelecimento>()
+                .HasOne(a => a.Agenda)
+                .WithOne(e => e.Estabelecimento);
+
+            builder.Entity<Estabelecimento>()
                 .HasKey(x => x.IdEstabelecimento);
 
             builder.Entity<Estabelecimento>()
                 .Property(x => x.NomeEstabelecimento)
+                .HasColumnType("varchar(100)")
                 .IsRequired();
 
             builder.Entity<Estabelecimento>()
-                .Property(x => x.NomeProfissional);
+                .Property(x => x.NomeProfissional)
+                .HasColumnType("varchar(100)");
 
             builder.Entity<Estabelecimento>()
                 .Property(x => x.Ativo)

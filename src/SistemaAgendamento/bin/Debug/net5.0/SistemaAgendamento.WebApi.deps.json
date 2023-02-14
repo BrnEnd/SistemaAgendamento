@@ -802,13 +802,22 @@
           "System.Drawing.Common": "4.7.0"
         }
       },
+      "SistemaAgendamento.Domain/1.0.0": {
+        "runtime": {
+          "SistemaAgendamento.Domain.dll": {}
+        },
+        "compile": {
+          "SistemaAgendamento.Domain.dll": {}
+        }
+      },
       "SistemaAgendamento.Repository/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.0",
           "Microsoft.EntityFrameworkCore.Abstractions": "5.0.0",
           "Microsoft.EntityFrameworkCore.Relational": "5.0.0",
           "Microsoft.Extensions.Logging": "7.0.0",
-          "MySql.EntityFrameworkCore": "5.0.0"
+          "MySql.EntityFrameworkCore": "5.0.0",
+          "SistemaAgendamento.Domain": "1.0.0"
         },
         "runtime": {
           "SistemaAgendamento.Repository.dll": {}
@@ -2810,6 +2819,11 @@
       "sha512": "sha512-CeWTdRNfRaSh0pm2gDTJFwVaXfTq6Xwv/sA887iwPTneW7oMtMlpvDIO+U60+3GWTB7Aom6oQwv5VZVUhQRdPQ==",
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
+    },
+    "SistemaAgendamento.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "SistemaAgendamento.Repository/1.0.0": {
       "type": "project",

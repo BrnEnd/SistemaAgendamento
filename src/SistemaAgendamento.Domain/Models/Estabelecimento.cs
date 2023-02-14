@@ -39,9 +39,10 @@ namespace SistemaAgendamento.Domain.Models
             }
         }
         public string NomeProfissional { get; set; }
-
         private char _ativo;
         public char Ativo { get => this._ativo; private set => this._ativo = value; }
+
+        public Agenda Agenda { get; set; }
 
         public Estabelecimento(int idEstabelecimento, string nomeEstabelecimento, string nomeProfissional, char ativo = 'S')
         {
