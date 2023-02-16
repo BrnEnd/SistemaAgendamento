@@ -17,7 +17,8 @@ namespace SistemaAgendamento.Repository.ModelConfiguration
 
             builder.Entity<Estabelecimento>()
                 .HasOne(a => a.Agenda)
-                .WithOne(e => e.Estabelecimento);
+                .WithOne(e => e.Estabelecimento)
+                .HasForeignKey<Agenda>(a => a.IdAgenda);
 
             builder.Entity<Estabelecimento>()
                 .HasKey(x => x.IdEstabelecimento);
