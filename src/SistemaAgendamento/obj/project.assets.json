@@ -833,19 +833,6 @@
           }
         }
       },
-      "SistemaAgendamento.Application/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "SistemaAgendamento.Domain": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/SistemaAgendamento.Application.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/SistemaAgendamento.Application.dll": {}
-        }
-      },
       "SistemaAgendamento.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -867,7 +854,6 @@
           "Microsoft.EntityFrameworkCore.Relational": "5.0.0",
           "Microsoft.Extensions.Logging": "7.0.0",
           "MySql.EntityFrameworkCore": "5.0.0",
-          "SistemaAgendamento.Application": "1.0.0",
           "SistemaAgendamento.Domain": "1.0.0"
         },
         "compile": {
@@ -2243,11 +2229,6 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
-    },
-    "SistemaAgendamento.Application/1.0.0": {
-      "type": "project",
-      "path": "../SistemaAgendamento.Core/SistemaAgendamento.Application.csproj",
-      "msbuildProject": "../SistemaAgendamento.Core/SistemaAgendamento.Application.csproj"
     },
     "SistemaAgendamento.Domain/1.0.0": {
       "type": "project",

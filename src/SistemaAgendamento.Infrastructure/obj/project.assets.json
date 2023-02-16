@@ -743,19 +743,6 @@
           }
         }
       },
-      "SistemaAgendamento.Application/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "SistemaAgendamento.Domain": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/SistemaAgendamento.Application.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/SistemaAgendamento.Application.dll": {}
-        }
-      },
       "SistemaAgendamento.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -2026,11 +2013,6 @@
         "version.txt"
       ]
     },
-    "SistemaAgendamento.Application/1.0.0": {
-      "type": "project",
-      "path": "../SistemaAgendamento.Core/SistemaAgendamento.Application.csproj",
-      "msbuildProject": "../SistemaAgendamento.Core/SistemaAgendamento.Application.csproj"
-    },
     "SistemaAgendamento.Domain/1.0.0": {
       "type": "project",
       "path": "../SistemaAgendamento.Domain/SistemaAgendamento.Domain.csproj",
@@ -2048,7 +2030,6 @@
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.0",
       "Microsoft.Extensions.Logging >= 7.0.0",
       "MySql.EntityFrameworkCore >= 5.0.0",
-      "SistemaAgendamento.Application >= 1.0.0",
       "SistemaAgendamento.Domain >= 1.0.0"
     ]
   },
@@ -2085,9 +2066,6 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Projetos - GITHUB\\SistemaAgendamento\\src\\SistemaAgendamento.Core\\SistemaAgendamento.Application.csproj": {
-              "projectPath": "D:\\Projetos - GITHUB\\SistemaAgendamento\\src\\SistemaAgendamento.Core\\SistemaAgendamento.Application.csproj"
-            },
             "D:\\Projetos - GITHUB\\SistemaAgendamento\\src\\SistemaAgendamento.Domain\\SistemaAgendamento.Domain.csproj": {
               "projectPath": "D:\\Projetos - GITHUB\\SistemaAgendamento\\src\\SistemaAgendamento.Domain\\SistemaAgendamento.Domain.csproj"
             }

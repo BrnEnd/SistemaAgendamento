@@ -9,8 +9,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using SistemaAgendamento.Domain.Interfaces;
 using SistemaAgendamento.Repository.Data;
 using SistemaAgendamento.Repository.DTOs.Profiles;
+using SistemaAgendamento.Repository.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -40,6 +42,12 @@ namespace SistemaAgendamento
             services.AddSingleton(mapper);
 
             services.AddDbContext<AppDbContext>(opts => opts.UseMySQL(Configuration.GetConnectionString("Connection")));
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddTransient<IEstabelecimentoRepository, RepositoryEstabelecimento>();
+            services.AddTransient<IAgendaRepository, RepositoryAgenda>();
+            services.AddTransient<IAgendamentoRepository, RepositoryAgendamento>();
+            services.AddTransient<IClienteRepository, RepositoryCliente>();
+
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SistemaAgendamento.Application.Interfaces
+namespace SistemaAgendamento.Domain.Interfaces
 {
-    public interface IAgendaRepository : IRepository<Agenda>
+    public interface IAgendamentoRepository : IRepository<Agendamento>
     {
- 
+        
     }
 }

@@ -5,11 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SistemaAgendamento.Application.Interfaces
+namespace SistemaAgendamento.Domain.Interfaces
 {
     public interface IEstabelecimentoRepository : IRepository<Estabelecimento>
     {
-        IEnumerable<Estabelecimento> GetEstabelecimentosAtivos();
+        List<Estabelecimento> GetEstabelecimentosAtivos();
     
     }
 }

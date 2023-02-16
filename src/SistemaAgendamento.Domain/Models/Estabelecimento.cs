@@ -11,22 +11,13 @@ namespace SistemaAgendamento.Domain.Models
         private int _idEstabelecimento;
         public int IdEstabelecimento
         {
-            get => this._idEstabelecimento; private set
-            {
-                if (value < 0)
-                {
-                    throw new Exception("Necessario IDEstabelecimento para instancia do Objeto Cliente.");
-                }
-                else
-                {
-                    this._idEstabelecimento = value;
-                }
-            }
+            get => this._idEstabelecimento; 
+            
         }
         private string _nomeEstabelecimento;
         public string NomeEstabelecimento
         {
-            get => this._nomeEstabelecimento; private set
+            get => this._nomeEstabelecimento; set
             {
                 if (value.Length <= 0)
                 {
@@ -40,16 +31,13 @@ namespace SistemaAgendamento.Domain.Models
         }
         public string NomeProfissional { get; set; }
         private char _ativo;
-        public char Ativo { get => this._ativo; private set => this._ativo = value; }
+        public char Ativo { get => this._ativo; set => this._ativo = value; }
 
         public Agenda Agenda { get; set; }
 
-        public Estabelecimento(int idEstabelecimento, string nomeEstabelecimento, string nomeProfissional, char ativo = 'S')
+        public Estabelecimento()
         {
-            IdEstabelecimento = idEstabelecimento;
-            NomeEstabelecimento = nomeEstabelecimento;
-            NomeProfissional = nomeProfissional;
-            Ativo = ativo;
+            
         }
 
 

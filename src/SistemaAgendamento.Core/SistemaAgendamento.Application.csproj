@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SistemaAgendamento.Domain\SistemaAgendamento.Domain.csproj" />
+    <ProjectReference Include="..\SistemaAgendamento.Infrastructure\SistemaAgendamento.Repository.csproj" />
   </ItemGroup>
 
 </Project>

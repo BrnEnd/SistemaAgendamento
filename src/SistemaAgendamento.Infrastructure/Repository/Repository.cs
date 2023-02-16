@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using SistemaAgendamento.Application.Interfaces;
 using SistemaAgendamento.Domain.Models;
+using SistemaAgendamento.Domain.Interfaces;
 using SistemaAgendamento.Repository.Data;
 using System;
 using System.Collections.Generic;

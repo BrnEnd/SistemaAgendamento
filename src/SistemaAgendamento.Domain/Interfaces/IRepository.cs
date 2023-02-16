@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SistemaAgendamento.Application.Interfaces
+namespace SistemaAgendamento.Domain.Interfaces
 {
     public interface IRepository<T>
     {
