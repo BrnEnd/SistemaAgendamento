@@ -1,6 +1,6 @@
 # Sistema de Agendamento
 
-Projeto com o intuito de estudo. A ideia aqui é criar um core de um sisteminha web de Agendamento para aplicar praticas como DDD, Repository, Unit of Work, Clean Architecture e o que for descobrindo no caminho.  
+Projeto com o intuito de estudo. A ideia aqui é criar um core de sistema web de Agendamento para aplicar praticas como DDD, Repository, Unit of Work, Clean Architecture e o que for descobrindo no caminho.  
 
 ## 🚀 Começando
 
