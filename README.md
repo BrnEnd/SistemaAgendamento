@@ -1,6 +1,6 @@
 # Sistema de Agendamento
 
-Um parágrafo da descrição do projeto vai aqui
+Projeto com o intuito de estudo. A ideia aqui é criar um core de um sisteminha web de Agendamento para aplicar praticas como DDD, Repository, Unit of Work, Clean Architecture e o que for descobrindo no caminho.  
 
 ## 🚀 Começando
 
@@ -10,29 +10,11 @@ Consulte **[Implantação](#-implanta%C3%A7%C3%A3o)** para saber como implantar 
 
 ### 📋 Pré-requisitos
 
-De que coisas você precisa para instalar o software e como instalá-lo?
 
 ```
-Dar exemplos
+- .netCore 5.1
+- MySql com as seguintes configurações "server=localhost;database=agendamentoDb;user=root;password=root"
 ```
-
-### 🔧 Instalação
-
-Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
-
-Diga como essa etapa será:
-
-```
-Dar exemplos
-```
-
-E repita:
-
-```
-Até finalizar
-```
-
-Termine com um exemplo de como obter dados do sistema ou como usá-los para uma pequena demonstração.
 
 ## ⚙️ Executando os testes
 
@@ -69,10 +51,6 @@ Mencione as ferramentas que você usou para criar seu projeto
 ## 🖇️ Colaborando
 
 Por favor, leia o [COLABORACAO.md](https://gist.github.com/usuario/linkParaInfoSobreContribuicoes) para obter detalhes sobre o nosso código de conduta e o processo para nos enviar pedidos de solicitação.
-
-## 📌 Versão
-
-Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as versões disponíveis, observe as [tags neste repositório](https://github.com/suas/tags/do/projeto). 
 
 ## ✒️ Autores
 
