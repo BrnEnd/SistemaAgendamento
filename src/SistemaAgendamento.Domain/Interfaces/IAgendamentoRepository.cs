@@ -9,6 +9,6 @@ namespace SistemaAgendamento.Domain.Interfaces
 {
     public interface IAgendamentoRepository : IRepository<Agendamento>
     {
-        
+        public string AddNewAgendamento(Agendamento agendamento, Cliente cliente, Agenda agenda);
     }
 }

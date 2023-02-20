@@ -14,6 +14,19 @@ namespace SistemaAgendamento.Repository.Repository
         public RepositoryAgendamento(AppDbContext context) : base(context)
         {
         }
+
+        public string AddNewAgendamento(Agendamento agendamento, Cliente cliente, Agenda agenda)
+        {      
+                var _agendamento = new Agendamento(Guid.NewGuid(), agendamento.DiaHoraAgendamento, (int)Status.Espera);
+                _agendamento.Agenda = agenda;
+                _agendamento.Cliente = cliente;
+                _agendamento.AgendaIdAgenda = _agendamento.Agenda.IdAgenda;
+                _agendamento.AgendaIdAgenda = _agendamento.Cliente.IdCliente;
+                _context.Agendamentos.Add(_agendamento);
+                _context.SaveChanges();
+                return "Agendamento realizado com sucesso!";
+          
+        }
     }
     
 }

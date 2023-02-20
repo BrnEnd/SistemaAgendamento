@@ -1,10 +1,13 @@
-﻿namespace SistemaAgendamento.Repository.DTOs
+﻿using System;
+
+namespace SistemaAgendamento.Repository.DTOs
 {
     public class AgendamentoDto
     {
-        public int IdAgenda { get; set; }
-        public int IdCliente { get; set; }
-        public int DiaHoraAgendamento { get; set; }
+        public Guid IdAgendamento { get; set; }
+        public int ClienteIdCliente { get; set; }
+        public int AgendaIdAgenda { get; set; }
+        public DateTime DiaHoraAgendamento { get; set; }
         public int StatusAgendamento { get; set; }
 
 

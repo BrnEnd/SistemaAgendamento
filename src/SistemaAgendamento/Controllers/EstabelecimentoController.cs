@@ -67,6 +67,12 @@ namespace SistemaAgendamento.Controllers
                 var estabelecimento = _mapper.Map<Estabelecimento>(request);
                 _context.EstabelecimentoRepository.Add(estabelecimento);
                 _context.Commit();
+                var agenda = new Agenda(estabelecimento.IdEstabelecimento, 'S');
+                estabelecimento.Agenda = agenda;
+                _context.EstabelecimentoRepository.Update(estabelecimento);
+                _context.Commit();
+
+                return Ok("Sucesso. ID do Estabelecimento: " + estabelecimento.IdEstabelecimento);
 
             }
             catch (Exception ex)
@@ -74,7 +80,7 @@ namespace SistemaAgendamento.Controllers
                 throw new Exception("Erro ao persistir dado no banco.", ex);
             }
 
-            return Ok("Sucesso.");
+            
 
         }
 
@@ -96,5 +102,6 @@ namespace SistemaAgendamento.Controllers
             return Ok("Sucesso.");
         }
 
+       
     }
 }
