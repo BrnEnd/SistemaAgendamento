@@ -4,7 +4,7 @@ using MySql.EntityFrameworkCore.Metadata;
 
 namespace SistemaAgendamento.Repository.Migrations
 {
-    public partial class AlterandoChaveEstrangeira : Migration
+    public partial class recriandobase : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -60,10 +60,10 @@ namespace SistemaAgendamento.Repository.Migrations
                 columns: table => new
                 {
                     IdAgendamento = table.Column<byte[]>(type: "varbinary(16)", nullable: false),
-                    AgendaIdAgenda = table.Column<int>(type: "int", nullable: true),
                     DiaHoraAgendamento = table.Column<DateTime>(type: "DateTime", nullable: false),
-                    StatusAgendamento = table.Column<string>(type: "char", nullable: false),
-                    ClienteIdCliente = table.Column<int>(type: "int", nullable: true)
+                    StatusAgendamento = table.Column<int>(type: "int", nullable: false),
+                    ClienteIdCliente = table.Column<int>(type: "int", nullable: false),
+                    AgendaIdAgenda = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -73,13 +73,13 @@ namespace SistemaAgendamento.Repository.Migrations
                         column: x => x.AgendaIdAgenda,
                         principalTable: "Agenda",
                         principalColumn: "IdAgenda",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Agendamento_Cliente_ClienteIdCliente",
                         column: x => x.ClienteIdCliente,
                         principalTable: "Cliente",
                         principalColumn: "IdCliente",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(

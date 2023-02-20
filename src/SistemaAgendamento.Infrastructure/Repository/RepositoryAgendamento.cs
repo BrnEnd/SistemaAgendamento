@@ -1,4 +1,5 @@
-﻿using SistemaAgendamento.Domain.Interfaces;
+﻿using Microsoft.EntityFrameworkCore;
+using SistemaAgendamento.Domain.Interfaces;
 using SistemaAgendamento.Domain.Models;
 using SistemaAgendamento.Repository.Data;
 using System;
@@ -17,6 +18,16 @@ namespace SistemaAgendamento.Repository.Repository
 
         public string AddNewAgendamento(Agendamento agendamento, Cliente cliente, Agenda agenda)
         {      
+                var agendaDisponivel = _context.Agendamentos.AsTracking().Where(a => a.AgendaIdAgenda == agendamento.AgendaIdAgenda && a.StatusAgendamento == (int)Status.Espera).ToList();
+
+                foreach(var item in agendaDisponivel)
+                {
+                    if (item.DiaHoraAgendamento == agendamento.DiaHoraAgendamento || item.DiaHoraAgendamento == agendamento.DiaHoraAgendamento.AddHours(1))
+                {
+                        return "Horário indisponível!";
+                    }
+                }
+
                 var _agendamento = new Agendamento(Guid.NewGuid(), agendamento.DiaHoraAgendamento, (int)Status.Espera);
                 _agendamento.Agenda = agenda;
                 _agendamento.Cliente = cliente;
@@ -26,6 +37,14 @@ namespace SistemaAgendamento.Repository.Repository
                 _context.SaveChanges();
                 return "Agendamento realizado com sucesso!";
           
+        }
+
+        public string CancelarAgendamento(Agendamento agendamento)
+        {
+            agendamento.StatusAgendamento = (int)Status.Cancelado;
+            _context.Update(agendamento);
+            _context.SaveChanges();
+            return "Agendamento cancelado com sucesso!";
         }
     }
     
