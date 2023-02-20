@@ -10,7 +10,7 @@ namespace SistemaAgendamento.Domain.Models
     {
 
         public Guid IdAgendamento { get; set; }
-        public Agenda Agenda { get; set; }
+    
         private DateTime _diaHoraAgendamento;
         public DateTime DiaHoraAgendamento { get => this._diaHoraAgendamento; private set { 
                 if(value < DateTime.UtcNow)
@@ -23,16 +23,19 @@ namespace SistemaAgendamento.Domain.Models
                 }
             }
         }
-        public Status StatusAgendamento { get; set; }
+        public int StatusAgendamento { get; set; }
 
+        public int ClienteIdCliente { get; set; }
+        public int AgendaIdAgenda { get; set; }
         public Cliente Cliente { get; set; }
-
-        public Agendamento(Guid idAgendamento,  DateTime diaHoraAgendamento, Status statusAgendamento)
+        public Agenda Agenda { get; set; }
+        public Agendamento(Guid idAgendamento,  DateTime diaHoraAgendamento, int statusAgendamento)
         {
             IdAgendamento = idAgendamento;
             DiaHoraAgendamento = diaHoraAgendamento;
             StatusAgendamento = statusAgendamento;
+            
         }
-
+      
     }
 }
