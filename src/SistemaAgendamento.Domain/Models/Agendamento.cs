@@ -10,10 +10,13 @@ namespace SistemaAgendamento.Domain.Models
     {
 
         public Guid IdAgendamento { get; set; }
-    
+
         private DateTime _diaHoraAgendamento;
-        public DateTime DiaHoraAgendamento { get => this._diaHoraAgendamento; private set { 
-                if(value < DateTime.UtcNow)
+        public DateTime DiaHoraAgendamento
+        {
+            get => this._diaHoraAgendamento; private set
+            {
+                if (value < DateTime.UtcNow)
                 {
                     throw new Exception("Data de agendamento inferior a data atual.");
                 }
@@ -29,13 +32,13 @@ namespace SistemaAgendamento.Domain.Models
         public int AgendaIdAgenda { get; set; }
         public Cliente Cliente { get; set; }
         public Agenda Agenda { get; set; }
-        public Agendamento(Guid idAgendamento,  DateTime diaHoraAgendamento, int statusAgendamento)
+        public Agendamento(Guid idAgendamento, DateTime diaHoraAgendamento, int statusAgendamento)
         {
             IdAgendamento = idAgendamento;
             DiaHoraAgendamento = diaHoraAgendamento;
             StatusAgendamento = statusAgendamento;
-            
+
         }
-      
+
     }
 }

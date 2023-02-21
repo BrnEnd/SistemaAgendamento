@@ -12,6 +12,5 @@ namespace SistemaAgendamento.Domain.Interfaces
         public string AddNewAgendamento(Agendamento agendamento, Cliente cliente, Agenda agenda);
 
         public string CancelarAgendamento(Agendamento agendamento);
-
     }
 }

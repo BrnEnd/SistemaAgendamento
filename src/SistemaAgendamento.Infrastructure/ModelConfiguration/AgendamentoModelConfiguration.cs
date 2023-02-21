@@ -30,7 +30,7 @@ namespace SistemaAgendamento.Repository.ModelConfiguration
             builder.Entity<Agendamento>()
                 .Property(a => a.StatusAgendamento)
                 .HasConversion<int>()
-                .IsRequired();  
+                .IsRequired();
 
             builder.Entity<Agendamento>()
                 .HasOne(a => a.Cliente)

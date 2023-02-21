@@ -33,7 +33,8 @@ namespace SistemaAgendamento.WebApi.Controllers
 
 
         [HttpPost("addNewAgendamento")]
-        public async Task<ActionResult> AddNewAgendamentoAsync([FromBody]AgendamentoDto request) {
+        public async Task<ActionResult> AddNewAgendamentoAsync([FromBody] AgendamentoDto request)
+        {
 
             var agendamento = _mapper.Map<Agendamento>(request);
             try
@@ -42,12 +43,12 @@ namespace SistemaAgendamento.WebApi.Controllers
                 Agenda agenda = await _context.AgendaRepository.GetById(request.AgendaIdAgenda);
                 Cliente cliente = await _context.ClienteRepository.GetById(request.ClienteIdCliente);
 
-                if(agenda == null || cliente == null)
+                if (agenda == null || cliente == null)
                 {
                     return NotFound("Cliente e/ou Agenda não encontrado(s).");
                 }
 
-                if (_context.AgendamentoRepository.AddNewAgendamento(agendamento,cliente,agenda).Equals("Agendamento realizado com sucesso!"))
+                if (_context.AgendamentoRepository.AddNewAgendamento(agendamento, cliente, agenda).Equals("Agendamento realizado com sucesso!"))
                 {
                     return Ok("Sucesso.");
                 }
@@ -89,7 +90,5 @@ namespace SistemaAgendamento.WebApi.Controllers
             }
         }
 
-       
-       
     }
 }

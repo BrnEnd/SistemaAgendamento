@@ -9,23 +9,14 @@ namespace SistemaAgendamento.Domain.Models
     public class Cliente
     {
         private int _idCliente;
-        public int IdCliente { get => this._idCliente; private set
-            {
-                if(value < 0)
-                {
-                    throw new ArgumentException("Necessario IDCliente para instancia do Objeto Cliente.");
-                }
-                else
-                {
-                    this._idCliente = value;
-                }
-            } 
-        }
+        public int IdCliente { get => this._idCliente; }
 
         private string _nome;
-        public string Nome { get => this._nome; private set
+        public string Nome
+        {
+            get => this._nome; set
             {
-                if(value.Length <= 0)
+                if (value.Length <= 0)
                 {
                     throw new Exception("Necessario Nome para instancia do Objeto Cliente.");
                 }
@@ -36,7 +27,9 @@ namespace SistemaAgendamento.Domain.Models
             }
         }
         private char _ativo;
-        public char Ativo { get => this._ativo; private set
+        public char Ativo
+        {
+            get => this._ativo; set
             {
                 this._ativo = value;
             }
@@ -44,12 +37,6 @@ namespace SistemaAgendamento.Domain.Models
 
         public List<Agendamento> Agendamentos { get; set; }
 
-        public Cliente(int idCliente, string nome, char ativo = 's')
-        {
-            IdCliente = idCliente;
-            Nome = nome;
-            Ativo = ativo;
-        }
 
 
 

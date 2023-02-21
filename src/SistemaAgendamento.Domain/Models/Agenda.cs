@@ -25,13 +25,12 @@ namespace SistemaAgendamento.Domain.Models
             }
         }
 
-        private char _agendaAberta;
         public char AgendaAberta { get; set; }
 
         public List<Agendamento> Agendamentos { get; set; }
-        public Estabelecimento Estabelecimento{get; set;}
+        public Estabelecimento Estabelecimento { get; set; }
 
-        public Agenda(int idAgenda, char agendaAberta )
+        public Agenda(int idAgenda, char agendaAberta)
         {
             IdAgenda = idAgenda;
 

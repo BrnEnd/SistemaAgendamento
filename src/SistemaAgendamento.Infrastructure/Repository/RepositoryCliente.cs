@@ -1,4 +1,5 @@
-﻿using SistemaAgendamento.Domain.Interfaces;
+﻿using Microsoft.EntityFrameworkCore;
+using SistemaAgendamento.Domain.Interfaces;
 using SistemaAgendamento.Domain.Models;
 using SistemaAgendamento.Repository.Data;
 using System;
@@ -13,6 +14,11 @@ namespace SistemaAgendamento.Repository.Repository
     {
         public RepositoryCliente(AppDbContext context) : base(context)
         {
+        }
+
+        public List<Agendamento> AgendamentosPendentes(int id)
+        {
+           return _context.Agendamentos.AsTracking().Where(a => a.ClienteIdCliente == id  && a.StatusAgendamento == (int)Status.Espera).ToList();
         }
     }
    

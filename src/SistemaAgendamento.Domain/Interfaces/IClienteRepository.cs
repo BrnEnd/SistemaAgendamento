@@ -9,6 +9,6 @@ namespace SistemaAgendamento.Domain.Interfaces
 {
     public interface IClienteRepository : IRepository<Cliente>
     {
-       
+       List<Agendamento> AgendamentosPendentes(int id);
     }
 }
