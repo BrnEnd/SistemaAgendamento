@@ -22,7 +22,7 @@ namespace SistemaAgendamento.Controllers
         {
             _mapper = mapper;
             _context = context;
-         }
+        }
 
         [HttpGet("getAll")]
         public ActionResult<IEnumerable<EstabelecimentoDto>> Get()
@@ -45,7 +45,7 @@ namespace SistemaAgendamento.Controllers
             }
             else
             {
-                return Ok(response);   
+                return Ok(response);
             }
 
         }
@@ -80,7 +80,7 @@ namespace SistemaAgendamento.Controllers
                 throw new Exception("Erro ao persistir dado no banco.", ex);
             }
 
-            
+
 
         }
 
@@ -102,6 +102,6 @@ namespace SistemaAgendamento.Controllers
             return Ok("Sucesso.");
         }
 
-       
+
     }
 }

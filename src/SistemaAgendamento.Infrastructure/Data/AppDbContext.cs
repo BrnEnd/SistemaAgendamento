@@ -26,8 +26,7 @@ namespace SistemaAgendamento.Repository.Data
 
         public DbSet<Estabelecimento> Estabelecimentos { get; set; }
         public DbSet<Cliente> Clientes { get; set; }
-        public DbSet<Agenda> Agendas { get; set; }   
-
+        public DbSet<Agenda> Agendas { get; set; }
         public DbSet<Agendamento> Agendamentos { get; set; }
     }
 }

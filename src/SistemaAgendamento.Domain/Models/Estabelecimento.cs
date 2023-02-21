@@ -11,8 +11,8 @@ namespace SistemaAgendamento.Domain.Models
         private int _idEstabelecimento;
         public int IdEstabelecimento
         {
-            get => this._idEstabelecimento; 
-            
+            get => this._idEstabelecimento;
+
         }
         private string _nomeEstabelecimento;
         public string NomeEstabelecimento

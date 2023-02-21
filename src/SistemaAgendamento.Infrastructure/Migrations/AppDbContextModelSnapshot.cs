@@ -37,18 +37,17 @@ namespace SistemaAgendamento.Repository.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("varbinary(16)");
 
-                    b.Property<int?>("AgendaIdAgenda")
+                    b.Property<int>("AgendaIdAgenda")
                         .HasColumnType("int");
 
-                    b.Property<int?>("ClienteIdCliente")
+                    b.Property<int>("ClienteIdCliente")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("DiaHoraAgendamento")
                         .HasColumnType("DateTime");
 
-                    b.Property<string>("StatusAgendamento")
-                        .IsRequired()
-                        .HasColumnType("char");
+                    b.Property<int>("StatusAgendamento")
+                        .HasColumnType("int");
 
                     b.HasKey("IdAgendamento");
 
@@ -115,11 +114,15 @@ namespace SistemaAgendamento.Repository.Migrations
                 {
                     b.HasOne("SistemaAgendamento.Domain.Models.Agenda", "Agenda")
                         .WithMany("Agendamentos")
-                        .HasForeignKey("AgendaIdAgenda");
+                        .HasForeignKey("AgendaIdAgenda")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("SistemaAgendamento.Domain.Models.Cliente", "Cliente")
                         .WithMany("Agendamentos")
-                        .HasForeignKey("ClienteIdCliente");
+                        .HasForeignKey("ClienteIdCliente")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Agenda");
 

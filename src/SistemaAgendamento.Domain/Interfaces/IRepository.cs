@@ -11,6 +11,7 @@ namespace SistemaAgendamento.Domain.Interfaces
     {
         IQueryable<T> GetAll();
         Task<T> GetById(int id);
+        Task<T> GetById(Guid id);
         void Add(T entity);
         void Update(T entity);
         void Delete(int id);

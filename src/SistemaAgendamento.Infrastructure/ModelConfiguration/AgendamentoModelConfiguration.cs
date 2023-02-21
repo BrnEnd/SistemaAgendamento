@@ -29,8 +29,8 @@ namespace SistemaAgendamento.Repository.ModelConfiguration
 
             builder.Entity<Agendamento>()
                 .Property(a => a.StatusAgendamento)
-                .HasColumnType("char")
-                .IsRequired();  
+                .HasConversion<int>()
+                .IsRequired();
 
             builder.Entity<Agendamento>()
                 .HasOne(a => a.Cliente)
