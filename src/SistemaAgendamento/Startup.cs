@@ -41,7 +41,16 @@ namespace SistemaAgendamento
             IMapper mapper = mappingConfig.CreateMapper();
             services.AddSingleton(mapper);
 
-            services.AddDbContext<AppDbContext>(opts => opts.UseMySQL(Configuration.GetConnectionString("Connection")));
+            services.AddDbContext<AppDbContext>(opts =>
+            {
+                opts.UseMySql(Configuration.GetConnectionString("Connection"),
+               ServerVersion.AutoDetect(Configuration.GetConnectionString("Connection")),
+                opts => opts.EnableRetryOnFailure(
+                    maxRetryCount: 5,
+                    maxRetryDelay: System.TimeSpan.FromSeconds(30),
+                    errorNumbersToAdd: null)
+                ); }
+            );
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddTransient<IEstabelecimentoRepository, RepositoryEstabelecimento>();
             services.AddTransient<IAgendaRepository, RepositoryAgenda>();

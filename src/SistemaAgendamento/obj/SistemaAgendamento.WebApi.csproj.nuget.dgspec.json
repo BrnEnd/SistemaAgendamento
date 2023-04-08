@@ -10,14 +10,14 @@
         "projectUniqueName": "D:\\Projetos - GITHUB\\SistemaAgendamento\\src\\SistemaAgendamento.Domain\\SistemaAgendamento.Domain.csproj",
         "projectName": "SistemaAgendamento.Domain",
         "projectPath": "D:\\Projetos - GITHUB\\SistemaAgendamento\\src\\SistemaAgendamento.Domain\\SistemaAgendamento.Domain.csproj",
-        "packagesPath": "C:\\Users\\Bruno Alexandrino\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\BrunoAlexandrino\\.nuget\\packages\\",
         "outputPath": "D:\\Projetos - GITHUB\\SistemaAgendamento\\src\\SistemaAgendamento.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\SDK\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Bruno Alexandrino\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\BrunoAlexandrino\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -70,14 +70,14 @@
         "projectUniqueName": "D:\\Projetos - GITHUB\\SistemaAgendamento\\src\\SistemaAgendamento.Infrastructure\\SistemaAgendamento.Repository.csproj",
         "projectName": "SistemaAgendamento.Repository",
         "projectPath": "D:\\Projetos - GITHUB\\SistemaAgendamento\\src\\SistemaAgendamento.Infrastructure\\SistemaAgendamento.Repository.csproj",
-        "packagesPath": "C:\\Users\\Bruno Alexandrino\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\BrunoAlexandrino\\.nuget\\packages\\",
         "outputPath": "D:\\Projetos - GITHUB\\SistemaAgendamento\\src\\SistemaAgendamento.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\SDK\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Bruno Alexandrino\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\BrunoAlexandrino\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -176,14 +176,14 @@
         "projectUniqueName": "D:\\Projetos - GITHUB\\SistemaAgendamento\\src\\SistemaAgendamento\\SistemaAgendamento.WebApi.csproj",
         "projectName": "SistemaAgendamento.WebApi",
         "projectPath": "D:\\Projetos - GITHUB\\SistemaAgendamento\\src\\SistemaAgendamento\\SistemaAgendamento.WebApi.csproj",
-        "packagesPath": "C:\\Users\\Bruno Alexandrino\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\BrunoAlexandrino\\.nuget\\packages\\",
         "outputPath": "D:\\Projetos - GITHUB\\SistemaAgendamento\\src\\SistemaAgendamento\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\SDK\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Bruno Alexandrino\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\BrunoAlexandrino\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -225,11 +225,11 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[5.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Abstractions": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[5.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -239,7 +239,7 @@
             },
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[5.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -252,6 +252,10 @@
               "version": "[7.0.0, )"
             },
             "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[5.0.0, )"
             },

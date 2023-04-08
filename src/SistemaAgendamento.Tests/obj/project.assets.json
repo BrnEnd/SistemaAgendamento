@@ -6109,7 +6109,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bruno Alexandrino\\.nuget\\packages\\": {},
+    "C:\\Users\\BrunoAlexandrino\\.nuget\\packages\\": {},
     "D:\\SDK\\NuGetPackages": {}
   },
   "project": {
@@ -6118,14 +6118,14 @@
       "projectUniqueName": "D:\\Projetos - GITHUB\\SistemaAgendamento\\src\\SistemaAgendamento.Tests\\SistemaAgendamento.Tests.csproj",
       "projectName": "SistemaAgendamento.Tests",
       "projectPath": "D:\\Projetos - GITHUB\\SistemaAgendamento\\src\\SistemaAgendamento.Tests\\SistemaAgendamento.Tests.csproj",
-      "packagesPath": "C:\\Users\\Bruno Alexandrino\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\BrunoAlexandrino\\.nuget\\packages\\",
       "outputPath": "D:\\Projetos - GITHUB\\SistemaAgendamento\\src\\SistemaAgendamento.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\SDK\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Bruno Alexandrino\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\BrunoAlexandrino\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
